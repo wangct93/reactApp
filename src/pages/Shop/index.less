@@ -1,0 +1,50 @@
+@import "../../styles/common";
+
+.container{
+  .flex-parent-column();
+}
+
+.tabs_box{
+  .flex-child-column();
+}
+
+.tabs{
+  height:100%;
+  & > :global(.ant-tabs-bar){
+    display: none;
+  }
+  & > :global(.ant-tabs-content),
+  & > :global(.ant-tabs-content) > :global(.ant-tabs-tabpane){
+    height: 100%;
+  }
+}
+
+.header{
+  height: 1rem;
+  .flex-parent();
+  padding: .2rem;
+  background-color: @activeColor;
+  :global{
+    .anticon{
+      font-size: .2rem;
+      color:#fff;
+    }
+  }
+  .right{
+    .flex-child();
+    text-align: right;
+    :global{
+      .anticon{
+        margin-left: @margin;
+      }
+    }
+  }
+}
+
+.shop_info{
+  margin: -.3rem @margin @margin @margin;
+  background-color: #fff;
+  border-radius:.05rem;
+  padding: @margin;
+  min-height: 1rem;
+}

@@ -1,0 +1,148 @@
+@import "../../styles/common";
+
+.container{
+  background-image: linear-gradient(to bottom,#ffcc33,#fff);
+
+  height: 100%;
+}
+
+.page_title{
+  text-align: center;
+  font-size:.2rem;
+  font-weight:bold;
+}
+
+.delivery_box{
+  padding: .2rem;
+
+  .delivery_content{
+    background-color: #fff;
+    border-radius: .1rem;
+    overflow: hidden;
+  }
+
+  .line{
+    .flex-parent();
+    align-items: center;
+    padding: .1rem;
+    border-top: @border;
+    margin: 0 .1rem;
+    &:last-child{
+      border-top: 0;
+    }
+  }
+
+  .left{
+    .flex-child();
+  }
+
+  .right{
+    .flex-child();
+    text-align: right;
+  }
+
+  .text_addr{
+    font-size: .2rem;
+    font-weight:bold;
+  }
+
+  .line_alert{
+    padding: 0 .2rem;
+    margin-top: -.1rem;
+    padding-bottom: .1rem;
+  }
+
+  :global{
+    .ant-tabs-content{
+      flex: 0 !important;
+      height: auto !important;
+    }
+  }
+}
+
+.text_warning{
+  color:orange;
+}
+
+.hr{
+  border-top:@border;
+}
+
+.order_info{
+  background-color: #fff;
+  margin: 0 .2rem;
+  border-radius:5px;
+}
+
+.shop_title{
+  line-height: .5rem;
+  margin:0 .2rem;
+  .flex-parent();
+  align-items: center;
+  border-bottom: @border;
+
+  .text_title{
+    .flex-child();
+  }
+
+  .mt_label{
+    border:@border;
+    padding: 0 .1rem;
+    line-height: .28rem;
+    height: .3rem;
+  }
+}
+
+.goods_item{
+  .flex-parent();
+  padding: .1rem;
+  .goods_img{
+    width: .6rem;
+    height: .6rem;
+    margin-right: .2rem;
+  }
+  .goods_info{
+    .flex-child();
+  }
+}
+
+.order_info{
+  .line{
+    padding: 0 .2rem;
+    line-height: .5rem;
+  }
+}
+
+.float_bar{
+  position: fixed;
+  bottom: .2rem;
+  left:.2rem;
+  right:.2rem;
+  height: .6rem;
+  border-radius:.3rem;
+  background-color: #000;
+  .flex-parent();
+  overflow: hidden;
+  color:#fff;
+
+  .price_box{
+    .flex-child();
+    padding-left: .2rem;
+    padding-top: .07rem;
+  }
+
+  .other_pay{
+    color:orange;
+    background-color: #252525;
+    padding: 0 .2rem;
+    .flex-center();
+  }
+
+  .submit_order{
+    background-color: orange;
+    .flex-center();
+    padding: 0 .2rem;
+    color:#333;
+    font-weight: bold;
+  }
+}

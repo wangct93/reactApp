@@ -1,0 +1,41 @@
+@import "../../styles/common";
+
+.container{
+
+}
+
+.content{
+  padding: .2rem;
+  > .text_title{
+    font-size: .3rem;
+    font-weight: bold;
+    margin-bottom: .1rem;
+  }
+}
+
+.box{
+  background-color: #fff;
+  padding: .2rem;
+  border-radius: .1rem;
+  margin-bottom: .1rem;
+}
+
+.menu_list{
+  .flex-parent();
+  flex-wrap: wrap;
+  .menu_item{
+    text-align: center;
+    width: .8rem;
+    margin: .1rem;
+    :global{
+      .anticon{
+        font-size: .3rem;
+        margin-bottom: .1rem;
+      }
+    }
+  }
+}
+
+.order_info{
+  margin: 0;
+}

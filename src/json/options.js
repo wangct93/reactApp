@@ -1,0 +1,111 @@
+/**
+ * 主页菜单数据
+ * @type {({icon: string, title: string})[]}
+ */
+import {loop} from "wangct-util";
+
+export const homeMenus = [
+  {
+    title:'美食',
+    icon:'user',
+  },
+  {
+    title:'猫眼电影',
+    icon:'user',
+  },
+  {
+    title:'酒店',
+    icon:'user',
+  },
+  {
+    title:'休闲娱乐',
+    icon:'user',
+  },
+  {
+    title:'外卖',
+    icon:'user',
+  },
+  {
+    title:'KTV',
+    icon:'user',
+  },
+  {
+    title:'周边游',
+    icon:'user',
+  },
+  {
+    title:'丽人',
+    icon:'user',
+  },
+  {
+    title:'小吃快餐',
+    icon:'user',
+  },
+  {
+    title:'足疗/按摩',
+    icon:'user',
+  },
+  {
+    title:'今日新单',
+    icon:'user',
+  },
+  {
+    title:'生活服务',
+    icon:'user',
+  },
+  {
+    title:'甜点饮品',
+    icon:'user',
+  },
+  {
+    title:'婚纱摄影',
+    icon:'user',
+  },
+  {
+    title:'母婴亲子',
+    icon:'user',
+  },
+  {
+    title:'学习培训',
+    icon:'user',
+  },
+  {
+    title:'结婚',
+    icon:'user',
+  },
+  {
+    title:'家装',
+    icon:'user',
+  },
+  {
+    title:'代金券',
+    icon:'user',
+  },
+  {
+    title:'全部分类',
+    icon:'user',
+  },
+];
+
+/**
+ * 导航栏菜单
+ * @type {({path: string, title: string}|{path: string, title: string}|{path: string, title: string}|{path: string, title: string})[]}
+ */
+export const navBarMenus = [
+  {
+    title:'首页',
+    path:'/home'
+  },
+  {
+    title:'发现',
+    path:'/found'
+  },
+  {
+    title:'订单',
+    path:'/order-list'
+  },
+  {
+    title:'我的',
+    path:'/user-info'
+  }
+];

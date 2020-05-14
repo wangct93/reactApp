@@ -1,0 +1,22 @@
+@import "../../styles/common";
+
+.container{
+  display: flex;
+  padding: 5px 0;
+  background-color: #fff;
+  border-top:@border;
+
+  .icon_box{
+    font-size: .24rem;
+  }
+
+  .item{
+    flex:1;
+    text-align: center;
+    color:#333;
+
+    &.active{
+      color:@activeColor;
+    }
+  }
+}

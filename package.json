@@ -1,0 +1,25 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "wangct-webpack",
+    "server": "node server",
+    "build": "wangct-webpack build",
+    "publish": "npm pu --registry https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "wangct-mysql": "^1.0.9",
+    "wangct-server-util": "^1.0.43",
+    "wangct-util": "^1.1.4"
+  },
+  "devDependencies": {
+    "antd": "^3.26.13",
+    "antd-mobile": "^2.3.1",
+    "react": "^16.13.1",
+    "wangct-react": "^1.0.26",
+    "wangct-react-entry": "^1.0.21",
+    "wangct-webpack": "^1.1.12"
+  }
+}

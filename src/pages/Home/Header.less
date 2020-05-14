@@ -1,0 +1,27 @@
+@import "../../styles/common";
+.container{
+  .flex-center();
+  height: .5rem;
+  padding: 0 .10rem;
+  background-image:linear-gradient(135deg, #FFD000 0%, #FFBD00 100%);
+  font-size: .16rem;
+}
+
+.search_box{
+  padding: 0 .1rem;
+  .flex-child();
+
+  :global{
+    .ant-input{
+      border-width: 0;
+    }
+  }
+}
+
+.user_box{
+  :global{
+    .anticon{
+      font-size: .24rem;
+    }
+  }
+}
